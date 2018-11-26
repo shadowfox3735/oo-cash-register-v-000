@@ -11,12 +11,8 @@ class CashRegister
   end
   
   def apply_discount
-    self.total == 0?
-    failure = "There is no discount to apply."
-    failure:
-    self.total -= self.total * discount/100
-    success = "After the discount, the total comes to $#{self.total}."
-    success
+    self.total == 0? "There is no discount to apply.": 
+    self.total -= self.total * discount/100 "After the discount, the total comes to $#{self.total}."
   end
   
 end
