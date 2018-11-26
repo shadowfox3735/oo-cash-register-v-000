@@ -12,6 +12,7 @@ class CashRegister
   
   def apply_discount
     self.total = self.total * discount
+    puts 
   end
   
 end
