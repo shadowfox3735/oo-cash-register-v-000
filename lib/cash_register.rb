@@ -11,7 +11,7 @@ class CashRegister
   end
   
   def apply_discount
-elf.total == 0 ? "There is no discount to apply." : "After the discount, the total comes to $#{self.total -= self.total*discount/100 }."
+    self.total == 0 ? "There is no discount to apply." : "After the discount, the total comes to $#{self.total -= self.total*discount/100 }."
   end
   
 end
